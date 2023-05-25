@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link href="style_sheet.css" rel="stylesheet" type="text/css">
+    <link href="https://6218u.github.io/flex_textarea/flex_textarea.css" rel="stylesheet" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <form id = "form">
+      <div>
+        <label>Deck: </label>
+        <output id = "deck" for = "card"></output>
+        <label>Hand:</label>
+        <input id = "hand" name = "hand" type="number" value="5"></input>
+        <input  type="submit" name = "out" value = "URL Output" ></button>
+      </div>
+      <div class = "text_section">
+        <div class = "textarea_div">
+          <textarea id = "card" name = "card" class = "textarea flex_textarea" data-out = "deck"></textarea>
+        </div>
+        <div class = "textarea_div">
+          <textarea id = "target" name = "target"class = "textarea flex_textarea" ></textarea>
+        </div>
+      </div>
+    </form>
+    <script type = "module" src = "main.js" ></script>
+  </body>
+</html>

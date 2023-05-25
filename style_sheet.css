@@ -1,0 +1,12 @@
+
+
+textarea.textarea {
+  min-width:  25ch ;
+  min-height: 60ex ;
+  margin:     0px 1ch ;
+  padding: 10px ;
+}
+
+div.text_section {
+  white-space: nowrap ;
+}
