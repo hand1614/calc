@@ -1,7 +1,7 @@
 "use strict"
 
-import { textarea_resize } from "https://6218u.github.io/flex_textarea/flex_textarea.js" ;
-import { submit_to_query, query_to_form } from "https://6218u.github.io/form_query_io/form_query_io.js" ;
+import { textarea_resize } from "https://hand1614.github.io/flex_textarea/flex_textarea.js" ;
+import { submit_to_query, query_to_form } from "https://hand1614.github.io/form_query_io/form_query_io.js" ;
 
 // 0 <= n
 const fact = ( n, ret = 1 ) => n ? fact( n - 1, ret * n ) : ret ;
