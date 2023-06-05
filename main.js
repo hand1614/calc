@@ -28,11 +28,11 @@ function output_sum_cards () {
 }
 
 function init () {
-    query_to_form( document.getElementById( "form" ) ) ;
-    output_sum_cards.call( document.getElementById( "card" ) ) ;
-    document.getElementById( "form" ).addEventListener( "submit",   submit_to_query  ) ;
-    for( const v of document.querySelectorAll( "textarea.flex_textarea" ) ) v.addEventListener( "input", textarea_resize ) ;
-    // document.getElementById( "card"   ).addEventListener( "focusout", output_sum_cards ) ;
+  query_to_form( document.getElementById( "form" ) ) ;
+  output_sum_cards.call( document.getElementById( "card" ) ) ;
+  document.getElementById( "form" ).addEventListener( "submit",   submit_to_query  ) ;
+  for( const element of document.querySelectorAll( ".flex_textarea > textarea.textarea" ) ) element.addEventListener( "input", textarea_resize ) ;
+  // document.getElementById( "card"   ).addEventListener( "focusout", output_sum_cards ) ;
 }
 
 window.addEventListener( "load", init ) ;
